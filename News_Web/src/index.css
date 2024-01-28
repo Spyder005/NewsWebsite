@@ -1,0 +1,12 @@
+nav {
+  display: flex;
+  justify-content: space-between; /* Space elements evenly */
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar-right {
+  margin-left: auto; /* Push to the right */
+}

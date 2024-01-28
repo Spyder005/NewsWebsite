@@ -1,0 +1,10 @@
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    margin-top: 5rem;
+}
+
+.card-image-container{
+    height:13rem;
+
+}
