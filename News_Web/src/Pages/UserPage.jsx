@@ -41,7 +41,7 @@ const UserPage = (props) => {
       <div /> */}
 
       {newsdata.length !== 0 && categoryname !== "all" ? (
-        <div className="grid-wrapper">
+        <div className="grid-wrapper ">
           {newsdata
             .filter(
               (data) => data.categoryname.toLocaleLowerCase() === categoryname

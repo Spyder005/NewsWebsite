@@ -42,7 +42,7 @@ const CardNews = (props) => {
     return (
         <>
         
-            <div className='my-4 mx-2 me-2'>
+            <div className='my-4 mx-2 me-4 container-fluid'>
             <div className="card" style={{width: "18rem" }}>
        
             <div >

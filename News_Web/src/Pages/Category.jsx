@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { useNavigate } from "react-router-dom";
+import Navbars from "../Components/Navbars"
 
 const Category = () => {
   const navigate = useNavigate();
@@ -89,10 +90,17 @@ const Category = () => {
     
 
 
+     <Navbars/>
 
-
-
-      <div className="container">
+       
+      <div className=" me-auto text-light bg-danger" 
+      style={{backgroundImage: 'url(" https://images.pexels.com/photos/326278/pexels-photo-326278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")', height: '100vh', backgroundSize: 'cover', backgroundPosition: 'center',
+    // display: 'flex',
+    //  alignItems: 'center',
+    // justifyContent: 'center'
+   }}
+    >
+     
 
       {(!authToken) ? 
        <Card className="text-center text-center m-5 bg-dark text-light d-flex align-items-center justify-content-center" style={{ minHeight: '50vh' }}>
@@ -108,10 +116,10 @@ const Category = () => {
       </Card.Body  >
       </Card>:
        
-        <Card>
+        <Card className=" container m-5 text-light bg-success">
           <Form>
             <Row>
-              <Form.Group className="mb-3 col-lg-6" controlId="formBasicEmail">
+              <Form.Group className="mb-3 col-lg-6 " controlId="formBasicEmail">
                 <Form.Label>Title</Form.Label>
                 <Form.Control
                   type="text"
@@ -137,6 +145,7 @@ const Category = () => {
           </Form>
         </Card>}
       </div>
+     
     </>
   );
 };
